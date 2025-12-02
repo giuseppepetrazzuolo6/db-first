@@ -6,17 +6,17 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 colonne:
 
--id_auto INT
--marca VARCHAR(50)
--modello VARCHAR(50)
--carrozzeria VARCHAR(30)
--anno_immatricolazione YEAR
--colore VARCHAR(30)
--condizioni generali dell’auto TEXT
--chilometraggio INT
--alimentazione ENUM('benzina','diesel','elettrica','ibrida','gpl','metano')
--cilindrata INT
--potenza_cv INT
--prezzo DECIMAL(10,2)
--disponibilità ENUM('disponibile','venduta','prenotata')
--data_inserimento DATE
+-id_auto INT - NOT NULL
+-marca VARCHAR(50) - NOT NULL
+-modello VARCHAR(50) - NOT NULL
+-carrozzeria VARCHAR(30) - NULL
+-anno_immatricolazione YEAR - NOT NULL
+-colore VARCHAR(30) - NULL
+-condizioni generali dell’auto TEXT - NULL
+-chilometraggio INT - NOT NULL
+-alimentazione ENUM('benzina','diesel','elettrica','ibrida','gpl','metano') - NOT NULL
+-cilindrata INT - NULL
+-potenza_cv INT - NULL
+-prezzo DECIMAL(10,2) - NOT NULL
+-disponibilità ENUM('disponibile','venduta','prenotata') - NOT NULL DEFAULT('disponibile')
+-data_inserimento DATE - NOT NULL DEFAULT(now())
