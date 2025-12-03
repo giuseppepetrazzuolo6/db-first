@@ -12,7 +12,7 @@ colonne:
 -carrozzeria VARCHAR(30) - NULL
 -anno_immatricolazione YEAR - NOT NULL
 -colore VARCHAR(30) - NULL
--condizioni generali dell’auto TEXT - NULL
+-condizioni_generali TEXT - NULL
 -chilometraggio INT - NOT NULL
 -alimentazione ENUM('benzina','diesel','elettrica','ibrida','gpl','metano') - NOT NULL
 -cilindrata INT - NULL
